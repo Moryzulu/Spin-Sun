@@ -1,8 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+header {
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
     color: #ff6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.about-image {
+    max-width: 100%; /* Ensures the image doesn't exceed its original size */
+    height: auto; /* Maintains the image's aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners for a softer look */
+}
+.testimonial-carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: auto;
+}
+
+.testimonial-item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0; /* Adjust background color as needed */
+    border-radius: 10px;
+    margin-right: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.client-name {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
 }
